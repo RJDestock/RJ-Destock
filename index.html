@@ -47,6 +47,7 @@
           <div class="brand-tagline">Déstockage premium particuliers</div>
         </div>
       </div>
+      <!-- NAVIGATION + BOUTON PANIER CORRIGÉ -->
       <nav aria-label="Navigation principale">
         <ul class="nav-links">
           <li><a href="#destockage">Déstockage</a></li>
@@ -56,19 +57,20 @@
         </ul>
         <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">
           Recevoir les offres
-          <button class="snipcart-checkout" style="
-  margin-left:20px;
-  background:#111;
-  color:white;
-  border:none;
-  padding:10px 16px;
-  border-radius:8px;
-  cursor:pointer;
-  font-weight:600;
-">
-  🛒 Panier
-  <span class="snipcart-items-count"></span>
-</button>
+        </button>
+        <button class="snipcart-checkout" style="
+          margin-left:20px;
+          background:#111;
+          color:white;
+          border:none;
+          padding:10px 16px;
+          border-radius:8px;
+          cursor:pointer;
+          font-weight:600;
+        ">
+          🛒 Panier
+          <span class="snipcart-items-count"></span>
+        </button>
       </nav>
       <button class="burger" aria-label="Menu">
         <span></span><span></span>
@@ -155,8 +157,8 @@
         </div>
         <a href="#contact" class="link-inline">Plus d'arrivages</a>
       </div>
-<div class="product-grid">
-                <!-- COUPE-ONGLES -->
+      <div class="product-grid">
+        <!-- COUPE-ONGLES -->
         <article class="product-card" onclick="window.location.href='produit-coupe-ongles.html';" style="cursor:pointer;">
           <div class="product-tag">-26%</div>
           <div class="product-img">
@@ -184,7 +186,7 @@
           </div>
           <div class="product-cta">Voir la fiche produit</div>
         </article>
-        <!-- SUPPORT TÉLÉPHONE : VERSION CORRIGÉE -->
+        <!-- SUPPORT TÉLÉPHONE -->
         <article class="product-card" onclick="window.location.href='produit-support-telephone.html';" style="cursor:pointer;">
           <div class="product-tag">-53%</div>
           <div class="product-img">
@@ -321,22 +323,4 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© <span id="year"></span> RJ Destock. Tous droits réservés. | Caldas das Taipas, Portugal</span>
-        <span>Déstockage premium pour particuliers : qualité garantie, prix discount.</span>
-      </div>
-      <div class="footer-bottom">
-        <span>
-          <a href="mentions-legales.html">Mentions légales</a> |
-          <a href="cgv.html">CGV</a> |
-          <a href="confidentialite.html">Confidentialité</a> |
-          <a href="cookies.html">Cookies</a>
-        </span>
-      </div>
-    </div>
-  </footer>
-</div>
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-</body>
-</html>
+        <span>© <span id="year"></span> RJ Destock
