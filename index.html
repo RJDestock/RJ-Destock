@@ -41,6 +41,11 @@
     "sameAs": []
   }
   </script>
+
+  <!-- ✅ Snipcart ajouté -->
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
+  <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
+
 </head>
 
 <body>
@@ -179,7 +184,18 @@
             <div class="product-price">€9,90<span class="old">€14,90</span></div>
             <div class="product-discount">Stock : 28</div>
           </div>
-          <div class="product-cta">Voir la fiche produit</div>
+
+          <!-- ✅ Bouton Ajouter au panier -->
+          <button
+            class="snipcart-add-item product-cta"
+            data-item-id="coupe-ongles"
+            data-item-name="Coupe-ongles acier chirurgical"
+            data-item-price="9.90"
+            data-item-url="/produit-coupe-ongles.html"
+            data-item-description="Coupe-ongles premium en acier chirurgical"
+          >
+            Ajouter au panier
+          </button>
         </article>
 
        <!-- GEL CHEVEUX 500ML -->
@@ -194,7 +210,19 @@
     <div class="product-price">€11,90<span class="old">€19,90</span></div>
     <div class="product-discount">Stock : 42</div>
   </div>
-  <div class="product-cta">Voir la fiche produit</div>
+
+  <!-- ✅ Bouton Ajouter au panier -->
+  <button
+    class="snipcart-add-item product-cta"
+    data-item-id="gel-500ml"
+    data-item-name="Gel coiffant fixant fort 500ml"
+    data-item-price="11.90"
+    data-item-url="/produit-gel-cheveux.html"
+    data-item-description="Gel coiffant fort fixation longue durée 500ml"
+  >
+    Ajouter au panier
+  </button>
+
 </article>
 
       </div>
@@ -313,15 +341,13 @@
                       style="width:100%;background:transparent;border:1px solid rgba(184,188,199,0.6);border-radius:10px;padding:8px;font-size:12px;color:var(--white);outline:none;"></textarea>
           </div>
         </div>
-
-        <button type="submit" class="btn-primary" style="margin-top:6px;">
+         <button type="submit" class="btn-primary" style="margin-top:6px;">
           Commander maintenant
         </button>
       </form>
     </section>
   </main>
-
-  <!-- FOOTER -->
+<!-- FOOTER -->
   <footer>
     <div class="wrapper footer-inner">
       <div class="footer-top">
@@ -348,12 +374,11 @@
       </div>
     </div>
   </footer>
-
 </div>
-
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
-
+<!-- ✅ Container Snipcart -->
+<div hidden id="snipcart" data-api-key="TA_CLE_API_SANDBOX_ICI"></div>
 </body>
 </html>
