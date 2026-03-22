@@ -18,6 +18,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
+<script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
   <!-- ✅ JSON-LD mis à jour -->
   <script type="application/ld+json">
   {
@@ -54,9 +56,14 @@
           <li><a href="#pro">Concept</a></li>
           <li><a href="#faq">FAQ</a></li>
         </ul>
-        <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">
-          Recevoir les offres
-          <button class="snipcart-checkout" style="
+        <div style="display:flex; gap:10px; align-items:center;">
+  <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">
+    Recevoir les offres
+  </button>
+  <a href="#" class="snipcart-checkout" style="background:#111;color:white;border:none;padding:10px 16px;border-radius:8px;cursor:pointer;font-weight:600;text-decoration:none;">
+    🛒 Panier <span class="snipcart-items-count"></span>
+  </a>
+</div>
   margin-left:20px;
   background:#111;
   color:white;
@@ -338,5 +345,6 @@
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
+  <div hidden id="snipcart" data-api-key="MjUwNWU1NDctZmQwOC00YmEwLTlkMTItMWMxZmYyYWI5MzdhNjM4ODk3NzU4MjkzMjE0MDQ3"></div>
 </body>
 </html>
