@@ -779,31 +779,39 @@ form.pill-row textarea {
   .hero-card {
     order: -1;
   }
+
   .section-header {
     flex-direction: column;
     align-items: flex-start;
   }
- .product-grid {
+
+  .product-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
   .faq-grid {
     grid-template-columns: 1fr;
   }
 }
+
 @media (max-width: 520px) {
   .hero {
     padding-top: 40px;
   }
+
   .header-inner {
     padding-inline: 12px;
   }
+
   .wrapper {
     padding-inline: 14px;
   }
+
   .product-grid {
     grid-template-columns: minmax(0, 1fr);
   }
- .hero-card-main {
+
+  .hero-card-main {
     grid-template-columns: 1fr;
   }
-}
+} 
